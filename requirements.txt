@@ -1,0 +1,4 @@
+telebot
+os
+time
+load_dotenv
