@@ -2,12 +2,12 @@
 import telebot
 import os
 import time
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 
 
 
-load_dotenv()
+#load_dotenv()
 
 #bot_token = os.getenv('API_KEY')
 bot_token=os.environ.get('API_KEY')
