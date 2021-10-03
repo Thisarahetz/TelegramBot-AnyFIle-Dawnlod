@@ -15,7 +15,7 @@ bot=telebot.TeleBot(token=bot_token,parse_mode=None)
 
 
 
-@bot.message_handler(commands=["Hello"])
+@bot.message_handler(commands=["start"])
 def sendDocument(message):
     bot.reply_to(message,"Enter Link")
     
