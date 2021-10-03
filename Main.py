@@ -2,15 +2,12 @@
 import telebot
 import os
 import time
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 
+load_dotenv()
 
-
-
-#load_dotenv()
-
-#bot_token = os.getenv('API_KEY')
-bot_token=os.environ.get('API_KEY',"")
+bot_token = os.getenv('API_KEY')
+#bot_token=environ.get('API_KEY')
 
 bot=telebot.TeleBot(token=bot_token,parse_mode=None)
 
@@ -33,12 +30,12 @@ def echo_all(message):
 #def send_message(message):
 #    bot.reply_to(message,"Helloworkd")
 
-while True:
-    try:
-        bot.polling(none_stop=True)
-         #ConnectionError and ReadTimeout because of possible timout of the requests library
-         #maybe there are others, therefore Exception
-    except Exception:
-       time.sleep(15)
+# while True:
+#     try:
+#         bot.polling(none_stop=True)
+#          #ConnectionError and ReadTimeout because of possible timout of the requests library
+#          #maybe there are others, therefore Exception
+#     except Exception:
+#        time.sleep(15)
 
-#bot.polling()
+bot.polling()
