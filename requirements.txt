@@ -1,2 +1,2 @@
 telebot
-load_dotenv
+dotenv
