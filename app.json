@@ -10,16 +10,8 @@
     "repository": "",
     "success_url": "",
     "env": {
-        "TG_BOT_TOKEN": {
+        "BOT_TOKEN": {
             "description": "Your Telegram Bot Token from @BotFather",
-            "value": ""
-        },
-        "API_HASH": {
-            "description": "Your API Hash from my.telegram.org",
-            "value": ""
-        },
-        "APP_ID": {
-            "description": "Your APP ID from my.telegram.org",
             "value": ""
         }
     },
