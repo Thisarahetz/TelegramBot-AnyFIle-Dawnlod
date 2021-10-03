@@ -6,10 +6,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-#bot_token = os.getenv('BOT_TOKEN')
-bot_token=os.environ['BOT_TOKEN']
+token = os.getenv('BOT_TOKEN')
 
-bot=telebot.TeleBot(token=bot_token,parse_mode=None)
+bot = telebot.TeleBot(token)
 
 
 
@@ -38,4 +37,8 @@ def echo_all(message):
 #     except Exception:
 #        time.sleep(15)
 
-bot.polling()
+def main():
+    bot.polling()
+
+if __name__ == '__main__':
+    main()
