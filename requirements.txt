@@ -1,3 +1,2 @@
 telebot
-os
 load_dotenv
