@@ -1,2 +1,6 @@
 telebot
-python-dotenv
+telegraph
+Pillow
+Pyrogram
+TgCrypto
+aiohttp
