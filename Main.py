@@ -9,7 +9,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-bot_token = os.getenv('API_KEY')
+#bot_token = os.getenv('API_KEY')
+bot_token=os.environ.get('API_KEY')
 
 bot=telebot.TeleBot(token=bot_token,parse_mode=None)
 
