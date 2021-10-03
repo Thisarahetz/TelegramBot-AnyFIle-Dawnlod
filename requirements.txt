@@ -1,3 +1,2 @@
 telebot
-time
-load_dotenv
+python-dotenv
