@@ -32,12 +32,12 @@ def echo_all(message):
 #def send_message(message):
 #    bot.reply_to(message,"Helloworkd")
 
-#while True:
-#    try:
-#        bot.polling(none_stop=True)
-        # ConnectionError and ReadTimeout because of possible timout of the requests library
-        # maybe there are others, therefore Exception
-#    except Exception:
-#       time.sleep(15)
+while True:
+    try:
+        bot.polling(none_stop=True)
+         #ConnectionError and ReadTimeout because of possible timout of the requests library
+         #maybe there are others, therefore Exception
+    except Exception:
+       time.sleep(15)
 
-bot.polling()
+#bot.polling()
