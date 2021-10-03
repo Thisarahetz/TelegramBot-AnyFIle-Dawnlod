@@ -10,9 +10,12 @@ token = os.getenv('BOT_TOKEN')
 
 bot = telebot.TeleBot(token)
 
+@bot.message_handler(commands = ['greet','start'])
+def greet(message):
+    msg = ''' Hello, how are you? '''
+    bot.reply_to(message, msg)
 
-
-@bot.message_handler(commands=["start"])
+@bot.message_handler(commands=["dawnlod"])
 def sendDocument(message):
     bot.reply_to(message,"Enter Link")
     
